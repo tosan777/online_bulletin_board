@@ -1,0 +1,20 @@
+// frozen_string_literal: true
+
+/* フォーム */
+.form {
+  margin-bottom: 80px;
+  &-field {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #F0F0F0;
+    border-radius: 8px;
+  }
+  &-actions {
+    margin-top: 20px;
+  }
+}
+
+/* フラッシュメッセージ */
+.flash {
+  margin-top: 30px;
+}

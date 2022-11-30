@@ -1,0 +1,16 @@
+<div class="mx-auto w-50">
+  <div class="d-flex align-items-center">
+    <div class="avatar-wrap">
+      <%= image_tag @user.avatar, class: 'avatar' %>
+    </div>
+    <strong class="user-name"><%= @user.name %></strong>
+  </div>
+  <div class="field">
+    <strong class="field-title">メールアドレス</strong>
+    <p class="user-introduction"><%= @user.email %></p>
+  </div>
+  <div class="field">
+    <strong class="field-title">自己紹介</strong>
+    <p class="user-introduction"><%= @user.self_introduction %></p>
+  </div>
+</div>
