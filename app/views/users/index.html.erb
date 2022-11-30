@@ -1,0 +1,15 @@
+<div class="mx-auto w-50">
+  <h1>ユーザー一覧ページ</h1>
+  <% @users.each do |user| %>
+    <%= link_to user_path(user), class: 'user-area' do %>
+      <div class="d-flex align-items-center">
+        <div class="avatar-wrap-index">
+          <%= image_tag user.avatar, class: 'avatar' %>
+        </div>
+        <strong class="user-name"><%= user.name %></strong>
+      </div>
+    <% end %>
+  <% end %>
+
+  <%= paginate @users, theme: 'bootstrap-5', pagination_class: "justify-content-end" %>
+</div>

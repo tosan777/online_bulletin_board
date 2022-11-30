@@ -1,0 +1,28 @@
+ja:
+  activerecord:
+    models:
+      user: 'ユーザー'
+      board: '掲示板'
+    attributes:
+      user:
+        avatar: 'アバター'
+        name: '名前'
+        email: 'メールアドレス'
+        self_introduction: '自己紹介'
+        password: 'パスワード'
+        password_confirmation: 'パスワード確認'
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: が空です
+            email:
+              blank: が空です。
+  views:
+    pagination:
+      first: "&laquo; 最初"
+      last: "最後 &raquo;"
+      next: "次 &rsaquo;"
+      previous: "&lsaquo; 前"
+      truncate: "&hellip;"
